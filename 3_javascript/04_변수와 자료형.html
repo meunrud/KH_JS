@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_변수와 자료형</title>
+    <!--external 방식으로 JS 파일 연결-->
+    <script src = "js/04_변수와 자료형.js"></script>
+</head>
+<body>
+    <h1> 변수 선언 위치에 따른 구분 </h1>
+    
+    <h4>Java</h4>
+    <pre>
+        public class Student(){
+
+            //필드 (멤버 변수)
+            private String name; // 인스턴스 변수
+            public static String schoolName; // 클래스 변수 or static 변수
+
+            //메소드 
+            public setName(String name //지역 변수){
+                this.name = name;
+                int num = 10; // 지역 변수
+
+                if(){
+                    int a = 20; // 지역 변수
+                }
+            }
+
+        }   
+     </pre>
+
+     <hr>
+     <h4> Javascript</h4>
+     <pre>
+        (js file)
+
+        var num1; //전역 변수(선언된 후 같은 문서 내 어디서든 사용 가능)
+        num2;     //전역 변수 (변수명 앞에 아무런 키워드가 없으면 전역변수가 된다.)
+
+     </pre>
+    
+</body>
+</html>
