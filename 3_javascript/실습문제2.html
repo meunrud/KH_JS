@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sum = function (n1, n2) {
+            return n1 + n2;
+        };
+
+        const add = function (n1, n2) {
+            return n1 + n2;
+        };
+
+        function calculate(op) {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+
+            switch (op) {
+                case op = '+': result.innerHTML = sum(num1, num2);
+
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>간이 계산기 만들기</h1>
+
+    첫번째 값 : <input type="text" id="num1" /><br />
+    두번째 값 : <input type="text" id="num2" /><br />
+    <button onclick="calculate(this)">+</button>
+    <button onclick="calculate(this)">-</button>
+    <button onclick="calculate(this)">%</button>
+    <button onclick="calculate(this)">*</button>
+    <button onclick="calculate(this)">/</button>
+
+    <br /><br />
+    계산 결과 : <span id="result"></span>
+</body>
+
+</html>
