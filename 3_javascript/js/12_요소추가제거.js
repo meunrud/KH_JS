@@ -1,6 +1,6 @@
 //*추가 버튼 (add)가 클릭되었을 때
 document.getElementById("add").addEventListener("click", function () {
-    //div 요소
+    //div 요소 생성
     const div = document.createElement("div");
 
     //div에 row 클래스 추가
@@ -8,7 +8,7 @@ document.getElementById("add").addEventListener("click", function () {
 
     //*------------------------------------------------
 
-    // input 요소
+    // input 요소 생성
     const input = document.createElement("input");
 
     //input에 in class 추가
@@ -20,7 +20,7 @@ document.getElementById("add").addEventListener("click", function () {
 
     //*------------------------------------------------
 
-    //sapn 요소
+    //sapn 요소 생성
     const span = document.createElement("span");
 
     //span에 remove 클래스 추가

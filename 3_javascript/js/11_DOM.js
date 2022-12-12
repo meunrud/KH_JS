@@ -95,10 +95,9 @@ document.getElementById("btn3-2").addEventListener("click", function () {
         //만들어진 div(child)에 내용 추가
         child.innerText = cnt2;
         cnt2++;
+        //*#div3-2의 마지막 요소로 추가하기(append)
+        div.append(child);
     }
-
-    //*#div3-2의 마지막 요소로 추가하기(append)
-    div.append(child);
 });
 
 document.getElementById("temp").addEventListener("click", function () {
