@@ -47,3 +47,22 @@ document.getElementById("add").addEventListener("click", function () {
     //#container에 div를 마지막 자식으로 추가
     document.getElementById("container").append(div);
 });
+
+document.getElementById("calc").addEventListener("click", function () {
+    //*합계 저장용 변수
+    let sum = 0;
+
+    //*in 클래스 요소 모두 얻어옴 -> 배열 형태
+    const list = document.getElementsByClassName("in");
+
+    //*배열용 향상된 for 문 이용
+    for (let i of list) {
+        sum += Number(i.value);
+    }
+    //*Number("") == 0 빈칸은 0으로 변환되기 때문에 신경쓰지 말기
+
+    //*sum에 입력값 누적 → input에 작성된 값은 모두 string → 숫자 변환 Number()필요
+
+    //sum을 alert로 출력
+    alert("합계 : " + sum);
+});
