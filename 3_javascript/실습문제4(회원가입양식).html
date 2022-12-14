@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제 4</title>
+    <style>
+        table {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+        <fieldset>
+            <legend>회원가입 양식</legend>
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="id" required="required"></td>
+                    <td><button id="overlapCheck">중복확인</button></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="text" id="pwd" required="required"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="text" id="pwdcheck" required="required"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" id="name" required="required"></td>
+                </tr>
+                <tr>
+                    <td>성별 </td>
+                    <td>남<input type="radio" name="gender" value="man">
+                        여<input type="radio" name="gender" value="woman"></td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="text" id="ph" required="required"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="text" id="email" required="required"></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" align="right"> <button id="reset">초기화</button> <button id="signIn">회원가입</button></>
+                </tr>
+            </table>
+
+
+
+        </fieldset>
+    </form>
+
+    <script src="js/실습문제4(회원가입양식).js"></script>
+</body>
+
+</html>
