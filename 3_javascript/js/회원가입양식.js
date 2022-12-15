@@ -73,13 +73,42 @@ inputPw.addEventListener('keyup', function () {
 성별이 선택 되었는지, 전화번호가 형식에 알맞게 작성되었는지 검사 */
 
 function validate() {
+    const gender = document.getElementsByClassName('gender');
+    const tel = document.getElementById('inputTel');
+    const regExp = /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
     /*- 성별이 선택되지 않은 경우 
     "성별을 선택해주세요." 경고창(==대화상자) 출력 후
     submit 기본 이벤트를 제거하여 회원가입이 진행되지 않게 함.*/
+    if (!gender[0].checked && !gender[1].checked) {
+        alert('성별을 선택해주세요');
+        return false;
+    }
+
+    //*방법2
+    //let count = 0;
+    //let result;
+    // for (let i = 0; i < gender.length; i++) {
+    //     if (gender[i].checked) {
+    //         count++
+    //     }
+    // }
+    if (count == 0) {
+        alert('성별을 선택해주세요');
+        return false;
+    }
+
     /*
     - 전화번호 형식이 올바르지 않을 경우 
     "전화번호의 형식이 올바르지 않습니다" 경고창(==대화상자) 출력 후
     submit 기본 이벤트를 제거하여 회원가입이 진행되지 않게 함.
     전화번호 정규 표현식 : /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/
     */
+    if (tel.value.length == 0) {
+        alert('전화번호를 입력 해 주세요.');
+        return false;
+    }
+    if (!regExp.text(tel.value)) {
+        alert('전화번호 형식이 올바르지 않습니다.');
+        return false;
+    }
 }
