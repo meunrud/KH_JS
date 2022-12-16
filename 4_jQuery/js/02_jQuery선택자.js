@@ -29,8 +29,8 @@ $(document).ready(function () {
     //* 클래스가 select 요소의 배경색을 yellowgreen으로 변경
     $('.select').css('backgroundColor', 'yellowgreen');
 
-    //* 클래스가 item,select를 동시에 가지고 있는 요소만 글자 크기 10px 로 변경
-    $('.item, .select').css('fontSize', '10px');
+    //* 클래스가 item, select를 동시에 가지고 있는 요소만 글자 크기 10px 로 변경
+    $('.item.select').css('fontSize', '10px');
 });
 
 //* 아이디 선택자
@@ -41,7 +41,7 @@ $('#input1').on('input', function () {
     //*on() == addEventListener
     //*→ 특정 이벤트 발생 시 동작(이벤트 핸들러) 지정
     //*input 이벤트 : 입력과 관련된 모든 행위
-    //* .val() == .value
+    //! .val() == .value
 
     //* 1) 작성된 값이 정규표현식에 맞는 형식인지 검사
     if (regExp.test($('#input1').val())) {
@@ -83,7 +83,7 @@ $('#check').on('click', function () {
     // console.log($("input[name='gender']"));
 
     //*name 속성 값이 gender 인 요소 중 체크된 요소 선택
-    //*.checked = :checked → 체크된 요소만 선택
+    //!.checked = :checked → 체크된 요소만 선택
     const gender = $("input[name='gender']:checked");
 
     console.log(gender.length);
