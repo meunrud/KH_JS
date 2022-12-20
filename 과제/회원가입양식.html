@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color : #f1f1f1;">
+    <div class="area">
+        <div class="upside">
+            <div id="title">구매회원가입</div>
+            <div class="step">
+                <div id="step1">1 가입</div>
+                <div id="step2">2 약관동의</div>
+                <div id="step3">3 정보입력</div>
+                <div id="step4">4 가입완료</div>
+            </div>
+        </div>
+        <div id="infoMessage">회원정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</div>
+        <div class="tableArea">
+            <table id="table">
+                <tr>
+                    <td colspan="4"><input type="text" id="inputID"></td>
+                    <td rowspan="2"><span id="idCheck">✓</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span name="idErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: 1px solid #f1f1f1;"><input type="password" id="inputPW"></td>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="pwCheck">✓</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span name="PWErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: 1px solid #f1f1f1;"><input type="password" id="pwConfirm"></td>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="pwConfirmcheck">✓</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span name="pwConfirmErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: 1px solid #f1f1f1;"><input type="text" id="inputName"></td>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="nameCheck">✓</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span name="NameErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 1px solid #f1f1f1;">
+                        <input type="radio" id="man">남
+                    </td>
+                    <td colspan="2" style="border-top: 1px solid #f1f1f1;"><input type="radio" id="woman">여
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span name="genderErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1; border-right: 1px solid #f1f1f1 ;"><select
+                            name="frontOfPh">
+                            <option>010</option>
+                            <option>011</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select></td>
+                    <td style="border-top: 1px solid #f1f1f1;"><input type="tel" id="middleOfPh"></td>
+                    <td style="border-top: 1px solid #f1f1f1;"><span id="divisionLine">-</span></td>
+                    <td style="border-top: 1px solid #f1f1f1;"><input type="tel" id="endOfPH"></td>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="phCheck">✓</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><span name="phErrorMessage" id="message">경고</span></td>
+                </tr>
+                <tr>
+                    <td style="border-top: 1px solid #f1f1f1;"><input type="email" id="inputEmail"></td>
+                    <td style="border-top: 1px solid #f1f1f1;"><span id="atMark">@</span></td>
+                    <td style="border-top: 1px solid #f1f1f1;"><input type="email" id="inputAdress"></td>
+                    <td rowspan="2" style="border-top: 1px solid #f1f1f1; border-left: 1px solid #f1f1f1;">
+                        <select name="adress">
+                            <option>직접입력 ✓</option>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option>daum.net</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><span name="emailErrorMessage" id="message">경고</span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="js/회원가입양식.js"></script>
+</body>
+
+</html>
