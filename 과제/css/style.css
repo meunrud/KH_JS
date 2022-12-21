@@ -1,11 +1,35 @@
 
-#table{
+table{
     border: 1px solid  #888888;
     border-collapse: collapse;
     width: 550px;
     height: 500px; 
-    border-bottom: 1px solid black;
     background-color: white;
+    /* text-align: left; */
+}
+
+table td{
+    text-align: left;
+    padding-bottom: 0;
+}
+
+#condition{
+    position: relative;
+    z-index: 1;
+    color: #c4c4c4;
+    margin: 10px;
+    padding-left: 120px;
+    font-size: 10px;
+}
+#inputBox{
+    position: absolute;
+    z-index: 2;
+
+    width: 90%;
+    height: 30px;
+}
+#phBox > input{
+    width: auto;
 }
 
 select{
@@ -18,50 +42,97 @@ select{
 }
 
 input{
-    width: 90%;
+    width: 80%;
+    height: 30px;
     text-align: left;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    padding: 0;
+}
+
+input::placeholder{
+    color: #c4c4c4;
+    font-weight: bold; 
+}
+
+label{
+    margin-left: 10px;
+    font-size: 15px;
+}
+label > input{
+    width: 10px;
+    height: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    
 }
 #message{
     color: red;
     vertical-align: top;
     font-size: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
 }
 
 .upside{
     display: flex;
-    flex-wrap:  nowrap;
     flex-direction: row;
-
+    align-items: baseline;
+    
 }
 
 
 #title{
     font-size: xx-large;
-    text-align: end;
     margin-right : 20px;
 
 }
 .step{
     display: flex;
     flex-wrap:  nowrap;
-    align-items: flex-end;
-
-    
+    align-items: baseline;
+    color:  #c4c4c4;
+    text-align: justify;
 }
+#step1, #step2, #step3, #step4{
+    padding-right: 20px;
+}
+
 #infoMessage{
     font-size: small;
     float: left;
+    margin-top: 20px;
+    color: #888888;
 }
 
 .tableArea > table > tr > span {
     font-size: medium;
 }
 
+#idCheck, #pwCheck, #pwConfirmcheck, #nameCheck, #genderCheck, #phCheck{
+    font-size: 30px;
+    color: #c4c4c4;;
+    margin-left: 40px;
+}
+
+#divisionLine{
+    color: white;
+}
+
 
 
 .area{
     box-sizing: border-box;
-    display: inline-block;
+    position:relative;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-250px;
+    margin-top:-300px;
+    
+
     /* display: flex;
     flex-direction: column;
 
@@ -75,4 +146,27 @@ input{
     /* align-items: center; width: 700px;
     flex-direction: row;
     justify-content : space-evenly; */ 
+}
+
+#before, #signIn{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+}
+#before{
+    background-color: #888888;
+}
+
+#signIn{
+    background-color: #3880e8;
+}
+.buttonArea{
+    display: flex;
+    justify-content: space-evenly;
 }

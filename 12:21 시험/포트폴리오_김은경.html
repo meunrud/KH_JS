@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table td {
+            width: 110px;
+            height: 20px;
+        }
+
+        input {
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return validator()">
+        <fieldset style="width: 300px; height : 270px">
+            <legend>회원가입 양식</legend>
+            <table id="table" style="margin: auto;">
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="inputId"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span id="idMessage"></span></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="inputPw"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span id="pwMessage"></span></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" id="inputPwConfirm"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        남자<input type="radio" class="gender" value="m">
+                        여자<input type="radio" class="gender" value="f">
+                    </td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td><input type="text" id="inputAdress"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="signIn" style="margin-top: 10px;">가입하기</button></td>
+                </tr>
+
+
+
+            </table>
+        </fieldset>
+
+
+
+    </form>
+
+    <script src="포트폴리오_김은경.js"></script>
+</body>
+
+</html>

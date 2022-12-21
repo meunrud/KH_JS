@@ -89,7 +89,7 @@
     /* item이 main axis 내에서 동일한 간격을 가지게 됨 */
     /* justify-content: space-evenly;  */
 
-    /* space-evenly에서 양 끝을 flex-containerdp 붙게 함 */
+    /* space-evenly에서 양 끝을 flex-container에 붙게 함 */
     /* justify-content: space-between; */
 
     /* ********************************* */
