@@ -17,7 +17,7 @@
             <div class="step">
                 <div id="step1"> 1 가입 </div>
                 <div id="step2"> 2 약관동의 </div>
-                <div id="step3"> 3 정보입력 </div>
+                <div id="step3" style="color: #3880e8; font-weight:bold"> 3 정보입력 </div>
                 <div id="step4"> 4 가입완료 </div>
             </div>
         </div>
@@ -26,27 +26,31 @@
             <form onsubmit="return validate()">
                 <table id="table">
                     <tr>
-                        <td colspan="4">
+                        <td class="idpw" colspan="4">
                             <div id="inputBox"><input type="text" id="inputID" placeholder="ID를 입력해주세요."
                                     required="required"></div>
                             <div id="condition">띄어쓰기 없이 영/숫자 6-10자.</div>
                         </td>
-                        <td rowspan="2"><span id="idCheck">✓</span></td>
+                        <td rowspan="2">
+                            <img src="img/검정체크.png" class="image" id="idCheckimg">
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><span name="idErrorMessage" id="message"></span></td>
+                        <td class="warning" colspan="4"><span name="idErrorMessage" id="message"></span></td>
                     </tr>
                     <tr>
-                        <td colspan="4" style="border-top: 1px solid #f1f1f1;">
+                        <td class="idpw" colspan="4" style="border-top: 1px solid #f1f1f1;">
                             <div id="inputBox">
                                 <input type="password" id="inputPW" placeholder="비밀번호 입력" required="required">
                             </div>
                             <div id="condition">띄어쓰기 없이 영/숫자 6-10자.</div>
                         </td>
-                        <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="pwCheck">✓</span></td>
+                        <td rowspan="2" style="border-top: 1px solid #f1f1f1;">
+                            <img src="img/검정자물쇠.png" class="image" id="pwCheckimg">
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><span name="pwErrorMessage" id="message"></span></td>
+                        <td class="warning" colspan="4"><span name="pwErrorMessage" id="message"></span></td>
                     </tr>
                     <tr>
                         <td colspan="4" style="border-top: 1px solid #f1f1f1;">
@@ -54,35 +58,35 @@
                                 required="required">
                         </td>
                         <td rowspan="2" style="border-top: 1px solid #f1f1f1;">
-                            <span id="pwConfirmcheck">✓</span>
+                            <img src="img/검정자물쇠.png" class="image" id="pwConfrimCheckimg">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><span name="pwConfirmErrorMessage" id="message"></span></td>
+                        <td class="warning" colspan="4"><span name="pwConfirmErrorMessage" id="message"></span></td>
                     </tr>
                     <tr>
                         <td colspan="4" style="border-top: 1px solid #f1f1f1;">
                             <input type="text" id="inputName" placeholder="이름" required="required">
                         </td>
                         <td rowspan="2" style="border-top: 1px solid #f1f1f1;">
-                            <span id="nameCheck">✓</span>
+                            <img src="img/검정체크.png" class="image" id="nameCheckimg">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><span name="nameErrorMessage" id="message"></span></td>
+                        <td class="warning" colspan="4"><span name="nameErrorMessage" id="message"></span></td>
                     </tr>
                     <tr>
                         <td colspan="4" style="border-top: 1px solid #f1f1f1;">
                             <label> 남 <input type="radio" name="gender" value="m"></label>
                             <label> 여 <input type="radio" name="gender" value="f"></label>
                         </td>
-                        <td style="border-top: 1px solid #f1f1f1;">
-                            <span id="genderCheck">✓</span>
+                        <td rowspan="2" style="border-top: 1px solid #f1f1f1;">
+                            <img src="img/검정체크.png" class="image" id="genderCheckimg">
                         </td>
 
                     </tr>
                     <tr>
-                        <td colspan="4"><span name="genderErrorMessage" id="message"></span></td>
+                        <td class="warning" colspan="4"><span name="genderErrorMessage" id="message"></span></td>
                     </tr>
                     <tr>
                         <td rowspan="2"
@@ -104,29 +108,31 @@
                                 <input type="tel" id="endOfPh" class="inputPh" required="required">
                             </div>
                         </td>
-                        <td rowspan="2" style="border-top: 1px solid #f1f1f1;"><span id="phCheck">✓</span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><span name="phErrorMessage" id="message"></span></td>
-                    </tr>
-                    <tr>
-                        <td style="border-top: 1px solid #f1f1f1;"><input type="email" id="inputEmail" placeholder="이메일"
-                                required="required">
+                        <td rowspan="2" style="border-top: 1px solid #f1f1f1;">
+                            <img src="img/검정체크.png" class="image" id="phCheckimg">
                         </td>
-                        <td style="border-top: 1px solid #f1f1f1;"><span id="atMark">@</span></td>
-                        <td colspan="2" style="border-top: 1px solid #f1f1f1;"><input type="text" id="inputAdress"
-                                required="required"></td>
-                        <td rowspan="2" style="border-top: 1px solid #f1f1f1; border-left: 1px solid #f1f1f1;">
-                            <select name="adress">
-                                <option value="userInput">직접입력 </option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="gmail.com">gmail.com</option>
-                                <option value="daum.net">daum.net</option>
+                    </tr>
+                    <tr>
+                        <td class="warning" colspan="3"><span name="phErrorMessage" id="message"></span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="border-top: 1px solid #f1f1f1;"><input type="email" class="email"
+                                id="inputEmail" placeholder="이메일" required="required" style="width: 120px;">
+                            <span id="atMark">@</span>
+                            <input type="text" class="email" id="inputAdress" required="required" style="width : 200px">
+                        </td>
+                        <td rowspan="2"
+                            style="border-top: 1px solid #f1f1f1; border-left: 1px solid #f1f1f1; width: 18%;">
+                            <select id="adress" onchange="selectAdress()">
+                                <option value="">직접입력 </option>
+                                <option name="choice" value="naver.com">naver.com</option>
+                                <option name="choice" value="gmail.com">gmail.com</option>
+                                <option name="choice" value="daum.net">daum.net</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3"><span name="emailErrorMessage" id="message">경고</span></td>
+                        <td class="warning" colspan="3"><span name="emailErrorMessage" id="message"></span></td>
                     </tr>
 
                 </table>

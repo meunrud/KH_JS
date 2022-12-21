@@ -1,32 +1,38 @@
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+-webkit-box-shadow: 0 0 0 30px white inset;
+}
+
 table{
     border: 1px solid  #888888;
     border-collapse: collapse;
-    width: 550px;
-    height: 500px; 
+    width: auto;
+    height: auto; 
     background-color: white;
-    /* text-align: left; */
 }
 
-table td{
-    text-align: left;
-    padding-bottom: 0;
-}
-
+/* table td{
+    align-items: flex-end;
+} */
 #condition{
     position: relative;
     z-index: 1;
     color: #c4c4c4;
-    margin: 10px;
-    padding-left: 120px;
+    padding-left: 140px;
     font-size: 10px;
+    margin-top: 7px;
+    
+    
 }
 #inputBox{
     position: absolute;
     z-index: 2;
-
-    width: 90%;
-    height: 30px;
+    align-items: center;
+    height: 20px;
+    margin-top: 2px;
 }
 #phBox > input{
     width: auto;
@@ -42,23 +48,36 @@ select{
 }
 
 input{
-    width: 80%;
-    height: 30px;
+    width: 400px;
+    height: 20px;
     text-align: left;
+    align-items: center;
     border: none;
     background-color: transparent;
     margin-left: 10px;
-    padding: 0;
+
+}
+#pwConfirm, #inputName, #inputEmail, #inputAdress, #middleOfPh, #endOfPh{
+    margin-top: 10px;
+}
+.idpw{
+    height: 30px;
 }
 
 input::placeholder{
     color: #c4c4c4;
     font-weight: bold; 
+
+}
+
+.warning{
+    height: 5px;
 }
 
 label{
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 20px;
 }
 label > input{
     width: 10px;
@@ -66,20 +85,21 @@ label > input{
     text-align: left;
     border: none;
     background-color: transparent;
+    margin-top: 15px;
     
 }
 #message{
-    color: red;
-    vertical-align: top;
+    color: #dc3340;
+    vertical-align: baseline;
     font-size: 10px;
     margin-left: 10px;
-    margin-top: 50px;
 }
 
 .upside{
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    
     
 }
 
@@ -102,62 +122,59 @@ label > input{
 
 #infoMessage{
     font-size: small;
-    float: left;
     margin-top: 20px;
     color: #888888;
+    margin-left: -200px;
 }
 
 .tableArea > table > tr > span {
     font-size: medium;
+
+}
+#adress{
+    font-weight: bold;
+    width: 100px;
+}
+.image{
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+
 }
 
-#idCheck, #pwCheck, #pwConfirmcheck, #nameCheck, #genderCheck, #phCheck{
-    font-size: 30px;
-    color: #c4c4c4;;
-    margin-left: 40px;
-}
 
 #divisionLine{
     color: white;
 }
 
+#atMark{
+    font-size: 15px;
+    color: white;
+}
 
 
 .area{
     box-sizing: border-box;
-    position:relative;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin-left:-250px;
-    margin-top:-300px;
     
-
-    /* display: flex;
+    display: flex;
+    flex-wrap:  nowrap;
     flex-direction: column;
-
-    /* flex-container 초과 시 여러줄 x ( 한줄로 만) */
-    /* flex-wrap:  nowrap; */
-
-    /* 중심축 방향 가운데 정렬 */
-    /* justify-content: space-evenly; */
-
-    /* 교차축 방향 가운데 정렬 */
-    /* align-items: center; width: 700px;
-    flex-direction: row;
-    justify-content : space-evenly; */ 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
 }
 
 #before, #signIn{
     width: 150px;
     height: 50px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
 
     font-weight: bold;
     font-size: medium;
     color: white;
+    border-bottom: 1px solid black;
 }
 #before{
     background-color: #888888;
