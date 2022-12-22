@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립고궁박물관</title>
+    <link rel="stylesheet" href="css/국립고궁박물관.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div id="upperLine"></div>
+            <nav id="sideMenu">
+                <input type="search" id="inputSearch">
+                <img id="glass" src="img/돋보기.png">
+                <ul>
+                    <li><span id="division">|</span></li>
+                    <li><a class="menuLink" href="#">로그인</a></li>
+                    <li><span id="division">|</span></li>
+                    <li><a class="menuLink" href="#">본인인증(회원가입)</a></li>
+                    <li><span id="division">|</span></li>
+                </ul>
+                <select id="language" onchange="selectLanguage()">
+                    <option id=" lang" value="">LANGUAGE</option>
+                    <option id=" lang" value="english">ENGLISH</option>
+                    <option id="lang" value="chinese">中文</option>
+                    <option id="lang" value="japanese">日本語</option>
+                </select>
+            </nav>
+            <nav id="topMenu">
+                <div class="menuContainer">
+                    <img id="mainLogo" src="img/logo.png">
+                </div>
+                <!-- <span id="blank"></span> -->
+                <div class="topUlcontainer">
+                    <ul>
+                        <li><a class="topMenuLink" href="#">이용안내</a></li>
+                        <li><a class="topMenuLink" href="#">전시</a></li>
+                        <li><a class="topMenuLink" href="#">교육</a></li>
+                        <li><a class="topMenuLink" href="#">소장품</a></li>
+                        <li><a class="topMenuLink" href="#">소식 ・ 참여</a></li>
+                        <li><a class="topMenuLink" href="#">학술정보</a></li>
+                        <li><a class="topMenuLink" href="#">박물관소개</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="main">
+                <div id="mainBig">
+                    <img id="mainBanner" src="img/천상열차.jpeg">
+                </div>
+                <div class="middle">
+                    <div id="secondFloor">
+                        <img class="middleBanner" id="middleBanner_1" src="img/2층-1.jpeg">
+                    </div>
+                    <div id="education">
+                        <img class="middleBanner" id="middleBanner_2" src="img/겨울방학.jpeg">
+                    </div>
+                    <div id="info">
+                        <img class="middleBanner" id="middleBanner_3" src="img/관람시간.jpeg">
+                    </div>
+                </div>
+                <section class="end">
+                    <div class="books">
+                        <div id="bookBanner">
+
+                            <figure>
+                                <figcaption>조선왕조기록문화유산</figcaption>
+                                <img id="books_1" src="img/조선왕조기록문화유산.jpeg">
+                            </figure>
+                            <figure>
+                                <figcaption>학술정보</figcaption>
+                                <img id="books_2" src="img/학술정보.jpeg">
+                            </figure>
+                            <figure>
+                                <figcaption>왕실유물 보존처리 이야기</figcaption>
+                                <img id="books_3" src="img/왕실유물보존처리.jpeg">
+                            </figure>
+                            <figure>
+                                <figcaption>수장고 속 왕실 유물 이야기</figcaption>
+                                <img id="books_4" src="img/수장고속왕실.jpeg">
+                            </figure>
+
+                        </div>
+                        <div class="notice">
+                            <figure id="noticeFig">
+                                <figcaption style="text-align: left;">알림판</figcaption>
+                                <img id="noticeImg" src="img/알림판-1.jpeg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <div class="endMenu">
+                    <nav id="endNav">
+                        <ul>
+                            <li><img id="plan" src="img/일정안내.png">일정안내</li>
+                            <li><img id="tour" src="img/관람안내.png">관람안내</li>
+                            <li><img id="fac" src="img/시설안내.png">시설안내</li>
+                            <li><img id="service" src="img/소장품열람.png">소장품 열람 ・ 복제 서비스</li>
+                            <li><img id="route" src="img/오시는길.png">오시는길</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerWrap">
+                <div class="footerBar">
+                    <nav id="QA">
+                        <ul>
+                            <li>・ 민원신청</li>
+                            <li>・ 자주하는 질문</li>
+                            <li id="privacy">・ 개인정보취급방침</li>
+                            <li>・ 저작권정책</li>
+                            <li>・ 이메일무단수집거부</li>
+                            <li>・ 성폭력 신고센터</li>
+                            <li>・ 경찰청 유실물 통합 포털</li>
+                        </ul>
+                    </nav>
+                    <div id="otherSite">
+                        <select id="site">
+                            <option value="">관련기관 바로가기</option>
+                            <option value="site_1">문화재청</option>
+                            <option value="site_2">문화재청소속기관</option>
+                        </select>
+                        <button id="move">이동</button>
+                    </div>
+                </div>
+            </div>
+            <div class="logoWrap">
+                <div class="logoContainer">
+                    <div id="footerLogo">
+                        <img id="grayLogo" src="img/흑백로고.png">
+                    </div>
+                    <div id="adress">
+                        <p>03045 서울특별시 종로구 효자로 12(세종로1-57) l TEL.02-3701-7500</p>
+
+                        <p>Hyojaro 12, Jongno-gu, Seoul 03045 l TEL. 82-2-3701-7500</p>
+
+                        <p>COPYRIGHT © 2015 NATIONAL PALACE MUSEUM OF KOREA. ALL RIGHTS RESERVED</p>
+                    </div>
+                    <div id="link">
+                        <img id="link_1" src="img/footer_banner_03.png">
+                        <img id="link_2" src="img/footer_banner_04.png">
+                        <img id="link_3" src="img/footer_banner_05.png">
+                        <img id="link_4" src="img/footer_banner_06.png">
+                        <img id="link_5" src="img/footer_banner_07.png">
+                        <img id="link_6" src="img/footer_banner_08.png">
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
