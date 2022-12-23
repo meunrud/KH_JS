@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국립고궁박물관</title>
-    <link rel="stylesheet" href="css/국립고궁박물관.css">
+    <link rel="stylesheet" href="css/국립고궁박물관_슬라이드.css">
 </head>
 
 <body>
@@ -50,8 +50,21 @@
         </header>
         <main>
             <div id="main">
-                <div id="mainBig">
-                    <img id="mainBanner" src="img/천상열차.jpeg">
+                <div id="mainBigd">
+                    <div class="mainBanner">
+                        <div class=mainSlide>
+                            <li><img id="mainBanner" src="img/천상열차.jpeg" alt=""></li>
+                            <li><img id="mainBanner" src="img/main_2.jpeg" alt=""></li>
+                            <li><img id="mainBanner" src="img/main_3.jpeg" alt=""></li>
+                            <li><img id="mainBanner" src="img/main_4.jpeg" alt=""></li>
+                            <li><img id="mainBanner" src="img/main_5.jpeg" alt=""></li>
+                            <li><img id="mainBanner" src="img/main_6.jpeg" alt=""></li>
+                        </div>
+                        <p class="controller">
+                            <span class="mainPrev">&lang;</span>
+                            <span class="mainNext">&rang;</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="middle">
                     <div id="secondFloor">
@@ -156,8 +169,7 @@
 
         </footer>
     </div>
-
-
+    <script src="js/국립고궁박물관.js"></script>
 </body>
 
 </html>

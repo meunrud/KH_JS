@@ -9,7 +9,8 @@ $('#inputID').on('input', function () {
         $('#idCheckimg').attr('src', '');
         $('#idCheckimg').attr('src', 'img/파란체크.png');
         $('#inputID').css('backgroundColor', 'white');
-        idMessage.text('');
+        idMessage.css('color', '#3880e8');
+        idMessage.text('사용가능한 아이디입니다.');
     } else if (!regEx.test($(this).val())) {
         $('#idCheckimg').attr('src', 'img/검정체크.png');
         idMessage.text(
@@ -23,6 +24,8 @@ $('#inputID').blur(function () {
     if ($(this).val().length == 0) {
         $('#idCheck').css('color', '#dc3340');
         idMessage.text('필수 정보입니다.');
+    } else {
+        $('#inputID').css('backgroundColor', 'white');
     }
 });
 
@@ -39,12 +42,11 @@ $('#inputPW').on('input', function () {
     if (regEx.test($(this).val())) {
         $('#pwCheckimg').attr('src', '');
         $('#pwCheckimg').attr('src', 'img/파랑자물쇠.png');
-        pwMessage.text('');
+        pwMessage.css('color', '#3880e8');
+        pwMessage.text('적정수준의 안전한 비밀번호입니다.');
     } else if (!regEx.test($(this).val())) {
         $('#pwCheckimg').attr('src', 'img/검정자물쇠.png');
-        pwMessage.text(
-            '띄어쓰기 없는 8~15자의 영문 대/소문자, 숫자 또는 특수문자 조합으로 입력하셔야 합니다.'
-        );
+        pwMessage.text('비밀번호 조합기준에 적합하지 않습니다.');
     }
 });
 
@@ -52,7 +54,9 @@ $('#inputPW').blur(function () {
     $('#inputPW').css('backgroundColor', '');
     if ($(this).val().length == 0) {
         $('#pwCheck').css('color', '#dc3340');
-        pwMessage.text('필수 정보입니다.');
+        pwMessage.text(
+            '띄어쓰기 없는 8~15자의 영문 대/소문자, 숫자 또는 특수문자 조합으로 입력하셔야 합니다.'
+        );
     }
 });
 
