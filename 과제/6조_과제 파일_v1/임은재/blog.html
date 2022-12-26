@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- 처음 구조 짤 때 border 줘 놓고 짜면 편함  -->
+    
+    <!-- header --------------------------------- -->
+    <div id="headerCommon">
+        <header>
+            <div id="header1">      
+                <img src="logo.png" id="logo">
+                <!-- <span id="title">blog</span>
+                <span id="subTitle">lifelog blog</span> -->
+            </div> 
+
+            <div id="header2">
+                <select>
+                    <option>글</option>
+                    <option>블로그</option>
+                    <option>별명·아이디</option>
+                </select>
+                <input type="text" id="inputSearch">
+                <img src="search.png" id="searchImg" width="40px" height="40px"></img>
+                <button id="searchBtn">통합검색</button>
+            </div>
+            <div id="header3">
+                <span id="loginBtn1">로그인</span>
+                <span id="menuBtnSpan"><input type="button" id="menuBtn"></span>
+            </div>
+        </header>
+    </div>
+
+    <!-- nav --------------------------------- -->
+    <div id="headerService">
+        <nav id="headerNav">          
+            <ul id="topLeftMenu">
+                <li id="activeHome">블로그 홈</li>
+                <li>주제별 보기</li>
+                <li>이달의 블로그</li>
+                <li>공식블로그</li>
+                <li>챌린지 프로그램</li>
+            </ul>
+            <ul id="topRigthMenu">
+                <li>블로그 마켓 가입</li>
+                <li>블로그팀 공식 블로그</li>
+            </ul>     
+        </nav>     
+    </div>
+    <!-- section 1 --------------------------------- -->
+    <div id="hotTopic">   
+        <section id="section1"> 
+            <div id="section1-1">
+                <div id="heading">
+                    <span>핫토픽</span>
+                    <span>></span>
+                    <span>크리스마스</span>
+                </div>
+                <div class="page">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+                <div id="imgDiv">
+                    <a href="">
+                        <div class="screen">
+                            <div class="bottom" id="bottom1"><img src="user.png" width="40px" height="40px"><span>블로그씨</span></div>
+                            <img src="tree1.jpg" width="250px" height="250px">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="screen">
+                            <div class="bottom"  id="bottom2"><img src="user.png" width="40px" height="40px">서로이웃</div>
+                            <img src="tree2.jpg" width="250px" height="250px">
+                        </div>
+                    </a>
+                    <a href="https://lms.khsmartcampus.com/">
+                        <div class="screen">
+                            <div class="bottom"  id="bottom3"><img src="user.png" width="40px" height="40px">kh정보교육원</div>
+                            <img src="tree3.jpg" width="250px" height="250px">
+                        </div>
+                    </a>                   
+                </div>
+            </div>
+            <div id="section1-2">
+                <div class="page">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+                <div id="adDiv">
+                    <div>
+                        <img src="ad1.png" width="250px" height="250px">
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+
+    <!-- section 2 --------------------------------- -->   
+    <div id="section2-aside">
+        <section id="section2">
+            <nav id="sectionNav">
+                <hr>
+
+                <ul>
+                    <li>전체</li>
+                    <li>문학·책</li>
+                    <li>어학·외국어</li>
+                    <li>영화</li>
+                    <li>취미</li>
+                    <li>세계여행</li>
+                    <li>반려동물</li>
+                    <li>공연·전시</li>
+                </ul>
+
+                <hr>
+            </nav>
+
+            <div class="content">
+                <div class="post1">
+                    <div class="post1-1">
+                        <div class="userImg">
+                            <img src="user1.png" width="40px" height="40px"><!-- 유저이미지 -->
+                        </div>
+                        <div class="nameAuthor">
+                            <span class="userId">만개의레시피</span>
+                            <span class="time">15:49</span>
+                        </div>
+                    </div>
+
+                    <div class="post1-2">
+                        <div class="titlePost">
+                            <a href="https://www.10000recipe.com/recipe/6923924">크리스마스 파티를 위한 홈파티음식 레시피</a>
+                        </div>
+                        <div class="text">
+                            <span>
+                                홈파티를 하려면 컨셉이 필요하잖아요???<br>
+                                크리스마스 레시피로 오늘 분위기 한껏 뽐내줘요~!<br>
+                                세상의 모든 레시피 만개의레시피
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post2">   
+                    <div class="thumbnail">
+                        <img src="food.jpg" width="200px" height="200px">
+                    </div>
+                </div>
+            </div>               
+            
+            <hr>
+
+            <div class="content">
+                <div class="post1">
+                    <div class="post1-1">
+                        <div class="userImg">
+                            <img src="user2.png" width="40px" height="40px"><!-- 유저이미지 -->
+                        </div>
+                        <div class="nameAuthor">
+                            <span class="userId">네이버 여행플러스</span>
+                            <span class="time">13:24</span>
+                        </div>
+                    </div>
+
+                    <div class="post1-2">
+                        <div class="titlePost">
+                            <a href="https://post.naver.com/viewer/postView.naver?volumeNo=34755478&memberNo=30482008&navigationType=push">일본 크리스마스 명소 8</a>
+                        </div>
+                        <div class="text">
+                            <span>
+                                올해의 대미를 장식할 행사는 단연 크리스마스다.<br> 
+                                멀리 가지 않더라도 색다른 매력의 크리스마스를 원한다면<br> 
+                                일본으로 눈을 돌려보는 것은 어떨까.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post2">   
+                    <div class="thumbnail">
+                        <img src="spot.png" width="200px" height="200px">
+                    </div>
+                </div>
+            </div>               
+
+            <hr>
+
+        </section>
+
+        <!-- aside --------------------------------- -->
+        <aside> 
+            <div id="login">
+                <div class="loginDiv">
+                    <p>네이버를 보다 편리하고 안전하게 이용하세요</p>
+                </div>
+                <div class="loginDiv">
+                    <button type="button" id="loginBtn2">NAVER 로그인</button>
+                </div>
+                <div class="loginDiv">
+                    <ul>
+                        <li>아이디 찾기</li>
+                        <li>비밀번호 찾기</li>
+                        <li><a href="signup.html">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ad">
+                <img src="ad2.png" width="250px" height="250px">
+            </div>
+            <div class="ad">
+                <img src="ad3.png" width="250px" height="250px">
+            </div>
+        </aside>
+    </div>
+    <!-- footer --------------------------------- -->
+    <div id="footer">
+        <footer>
+            <nav id="footerNav">
+                <span>이용약관</span>
+                <span>블로그 서비스 운영정책</span>
+                <span>개인정보처리방침</span>
+                <span>책임의 한계와 법적고지</span>
+                <span>글권리 보호하기</span>
+                <span>게시중단요청서비스</span>
+            </nav>
+            <div id="copyright">
+                <img src="logoFooter.png" width="100px" height="25px">
+                Copyright © NAVER Corp. All Rights Reserved.
+            </div>
+        </footer>
+    </div> 
+    
+    <script src="blog.js"></script>
+</body>
+</html>

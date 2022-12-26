@@ -8,6 +8,7 @@ $('#inputID').on('input', function () {
     if (regEx.test($(this).val())) {
         $('#idCheckimg').attr('src', '');
         $('#idCheckimg').attr('src', 'img/파란체크.png');
+        $('#inputID').css('backgroundColor', '');
         $('#inputID').css('backgroundColor', 'white');
         idMessage.css('color', '#3880e8');
         idMessage.text('사용가능한 아이디입니다.');

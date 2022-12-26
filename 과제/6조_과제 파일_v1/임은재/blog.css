@@ -1,0 +1,410 @@
+/*** 전체 ***************************************/
+img { cursor: pointer; }
+
+/*** header ***************************************/
+#headerCommon { background-color: #00C73C; }
+header { 
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;  
+    color: white;
+}
+
+#header1 { flex-basis: 15%; }
+#header2 { flex-basis: 65%; }
+#header3 { flex-basis: 20%; }
+
+
+#header1, #header2 {
+    font-size: 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#logo { cursor: pointer; }
+
+#search {
+    background-color: #00C73C;
+}
+
+#header2 select {
+    height: 40px; 
+    border-radius: 0;
+    border: 1px solid rgb(7, 150, 7);
+    border-right: none;
+}
+
+#inputSearch {
+    height: 40px;
+    width: 250px;
+    margin-left: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid rgb(7, 150, 7);
+}
+#searchImg {
+    border: 1px solid rgb(7, 150, 7);
+    cursor: pointer;
+}
+#searchBtn {
+    background-color: #28A93A;
+    color: white;
+    border: 1px solid rgb(7, 150, 7);
+    height: 40px;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#header3 {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+#loginBtn1 {
+    border: 1px solid rgb(9, 172, 9);
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menuBtn {
+    display: inline-block;
+    background: url("menuBtn.png") no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+    border: 1px solid rgb(9, 172, 9);
+    border-top: none;
+    border-bottom: none;
+}
+
+/*** nav ***************************************/
+nav li { 
+    display: inline-block; 
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#headerNav {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerNav { height :50px; }
+#headerNav ul { 
+    display: flex; 
+    margin: 0px;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#topLeftMenu li {
+    display: inline-block; 
+    line-height: 50px;
+}
+
+#topLeftMenu {
+    align-items: center;
+    width: 70%;
+    padding-left: 0;
+}
+#topLeftMenu li {
+    margin-right: 15px;
+    height: 100%;
+}
+
+#activeHome {
+    border-bottom: 3px solid #00C73C; 
+    color: #00C73C; 
+    font-weight: bold;
+}
+
+#topRigthMenu {
+    justify-content: right;
+    text-align: right;
+    width: 30%;
+}
+
+#topRigthMenu :nth-child(1) {
+    background-color: #00C73C;
+    color: white;
+    padding: 5px;
+    height: 35px;
+    box-sizing: border-box;
+}
+#topRigthMenu :nth-child(2) {
+    border: 1px solid gray;
+    height: 35px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+
+
+/*** section1 ***************************************/
+#hotTopic { 
+    background-color: #F5F5F6;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    display: flex;
+}
+
+#section1 {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+#section1-1 {
+    flex-basis: 75%;
+    margin-right: 25px;
+}
+
+#heading {
+    display: inline-block;
+    font-weight: bold;
+    color: gray; 
+}
+#heading :nth-child(1) { cursor: pointer; color: #E55E5E; }
+#heading :nth-child(3) { cursor: pointer; }
+
+#imgDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#imgDiv > div, #adDiv > div {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+/* hover 효과 */
+#imgDiv > a { 
+    /* text-decoration: none;  */
+}
+#imgDiv > a .screen {
+    position: relative;
+    overflow: hidden; 
+}
+#imgDiv > a .screen .bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 60%;
+    padding: 5px;
+    z-index: 2;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all .35s;
+    background-color: rgba(0,0,0, .5);
+}
+#imgDiv > a:hover .screen .bottom { top: 0%; opacity: 1; }
+
+/* css 가상요소 */
+/* ::before : 선택된 요소의 콘텐츠 시작부분에 생성된 콘텐츠를 추가한다. */
+/* ::after : 선택된 요소의 콘텐츠 끝 부분에 생성된 콘텐츠를 추가한다. */
+.screen #bottom1:hover::after {
+    content:"다이소 트리 풍성하게 꾸미기";
+    position: absolute;
+    top: 100px;
+    left: 11px;
+    transition: all .35s;
+}
+.screen #bottom2:hover::after {
+    content:"크리스마스 벽 트리 만들기";
+    position: absolute;
+    top: 100px;
+    left: 14px;
+    transition: all .35s;
+}
+.screen #bottom3:hover::after {
+    content:"행복한 크리스마스 되세요";
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    transition: all .35s;
+}
+
+
+.bottom img { 
+    margin: 5px 10px 0 30px;
+    display: inline-block;
+}
+
+.page span {
+    border: 1px solid rgb(170, 169, 169);
+    padding: 0 5px;
+    cursor: pointer;
+}
+.page :first-child {
+    background-color: rgb(115, 114, 114);
+    color: white;
+}
+
+#section1-1 .page {
+    display: inline-block;
+    margin-left: 535px;
+}
+
+#section1-2 .page { text-align: right;}
+#adDiv {margin-top: 10px; }
+
+/*** section2 ***************************************/
+#section2-aside {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#section2 {
+    flex-basis: 75%;
+    margin-right: 25px;
+}
+#sectionNav ul {
+    margin: 0;
+    padding: 0;
+}
+#sectionNav ul li {
+    margin: 0 5px;
+}
+#sectionNav ul :first-child {
+    color: #00AB33;
+}
+
+.content {
+    display: flex;
+    height: 200px;
+    margin: 20px 0;
+}
+.post1 { 
+    flex-basis : 70%;
+}
+.post2 { flex-basis : 30%;}
+
+.post1-1 {
+    display: flex;
+    text-align: center;
+}
+.userImg {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nameAuthor {
+    display: inline-block;
+}
+.userId { cursor: pointer; }
+.time { 
+    font-size: 13px; 
+    height: 50%;
+    display: block;
+    text-align: left;
+}
+.titlePost a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.text { cursor: pointer; }
+
+.post2 { text-align: right; }
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.thumbnail img {
+    cursor: pointer;
+}
+
+/*** aside ***************************************/
+aside {
+    flex-basis: 23%;
+}
+
+#login {
+    border: 1px solid rgb(233, 229, 229);
+    padding: 5px;
+    background-color: #F5F5F6;
+    box-sizing: border-box;
+}
+
+.loginDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.loginDiv a { text-decoration: none; }
+
+#login p {
+    font-size: 11px;
+}
+
+#loginBtn2 {
+    padding: 10px 65px;
+    background-color: #00C73C;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#login ul {
+    margin: 0;
+    padding-left: 0;
+}
+.loginDiv ul li {
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.ad {
+    height: 250px;
+    width: 250px;
+    border: 1px solid rgb(233, 229, 229);
+}
+
+/*** footer ***************************************/
+#footer { 
+    height: 130px;
+    background-color: #F6F6F6; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    width: 1100px;
+    margin: 0 auto;
+    /* align-items: baseline; */
+}
+#footerNav, #copyright {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+#footerNav > span {
+    margin: 0 10px;
+    cursor: pointer;
+}

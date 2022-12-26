@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통회원가입6조_ver2</title>
+    <style>
+        div{
+            display: block;
+        }
+        form{
+            display: block;
+        }
+        li{
+            position: relative;
+            list-style: none;
+            border-bottom: 1px solid #e8e8e8;
+            min-height: 49px;
+        }
+        .form_ul{
+            list-style: none;
+            margin-bottom: 20px;
+            padding: 0;
+            border: 1px solid #999;
+            font-size: 12px;
+            background-color: #fff;
+        }
+        .info-div-guide{
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 490px;
+            height: 36px;
+            margin-top: -6px;
+            padding: 0 30px;
+            line-height: 50px;
+        }
+        li>div>label{
+            color: #aeaeae;
+            display: inline;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        .placeholder{
+            display: inline;
+            padding-left: 15px;
+            font-size: 12px;
+            color: #aeaeae;
+            position: absolute;
+            z-index: 1;
+        }
+        li>input{
+            width: 490px;
+            height: 16px;
+            margin: 11px 0px 2px 28px;
+            padding: 5px 0;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+        }
+        .warning{
+        color: #dc3340;
+        font-size: 10px;
+        position: relative;
+        display: block;   
+        }
+        .guige_text{
+        font-size: 10px;    
+        display: block;
+        }
+        .form_main{
+            position: relative;
+            margin-bottom: 16px;
+        }
+        fieldset{
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div><h2>구매회원가입</h2></div>
+    
+    <div class="form_main">
+    <div><p class="guige_text">회원정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</p></div>
+    <form id="form1">
+        <ul class="form_ul">
+        <li>
+            <div class="info-div-guide">
+                <label for="inputId">ID를 만들어주세요</label>
+                <p class="placeholder">띄어쓰기 없이 영/숫자 6-10자 </p>
+            </div>
+            <input type="text" id="inputId">
+            <p class="warning">필수 정보입니다.</p>
+        </li>
+        <li>
+            <div class="info-div-guide">
+                <label for="inputPw">비밀번호 입력</label>
+                <p class="placeholder">8-15자의 영문 대소문자, 숫자 또는 특수문자 조합</p>
+            </div>
+            <input type="password" id="inputPw">
+            <p class="warning">필수 정보입니다.</p>
+            
+        </li>
+        <li>
+            <div class="info-div-guide">
+                <label for="inputPwConfirm">위의 비밀번호를 다시 입력해주세요.</label>
+            </div>
+            <input type="password" id="inputPwConfirm">
+            <p class="warning">필수 정보입니다.</p>
+            
+        </li>
+        <li>
+            <div class="info-div-guide">
+                <label for="inputName">이름</label>
+            </div>
+            <input type="text" id="inputName">
+            <p class="warning">필수 정보입니다.</p>
+        </li>
+        <li>
+            <div class="info-div-guide">
+            <select name="phone_num">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+              </div>
+            <label for="inputTel">휴대폰번호입력</label>
+            <input type="text" id="inputTel">
+            <p class="warning">필수 정보입니다.</p>
+        </li>
+        <li>
+            <div class="info-div-guide">
+            <label> 남 <input type="radio" name="gender" value="m"></label>
+            <label> 여 <input type="radio" name="gender" value="f"></label>
+            </div>  
+        </li>
+        <li>
+            <div class="info-div-guide">
+            <label for="input_Email_First">이메일</label>
+            <input type="text" id="input_Email_First" style="width:210px;">
+            <span>@</span>
+            <input type="text" id="input_Email_Address" style="width: 130px;">
+            </div>
+            <select name="email">
+                <option>직접입력</option>
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="hotmail">hotmail.com</option>
+                <option value="nate">nate.com</option>
+                <option value="yahoo">yahoo.co.kr</option>
+                <option value="paran">paran.com</option>
+                <option value="empas">empas.com</option>
+                <option value="gmail">gmail.com</option>
+              </select>
+              <p class="warning">필수 정보입니다.</p>
+            
+        </li>
+    </ul>
+    <div class="btn-area">
+        <button id="home">처음으로</button>
+        <button id="result">확인</button>
+    </div>
+    </form>
+    </div>
+
+
+    <script src="js/공통회원가입.js"></script>
+</body>
+</html>

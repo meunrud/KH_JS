@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인과제_문민섭</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 100px;
+        }
+        .main{
+            display: flex;
+            align-items: baseline;
+            margin-top: 10px;
+            padding-right: 9px;
+        }
+        .main_items button{
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        .main_item1 button:hover{
+            text-decoration: underline;
+        }
+        .img_item_header{
+            width: 20px;
+            height: 20px;
+        }
+        .img_item_header button:hover{
+            text-decoration: underline;
+        }
+        .main_item2 button{
+            padding: 0;
+            border: none;
+            background: none;
+            border-radius: 100px;
+            width: 35px;
+            height: 35px;
+            background-color: brown;
+            color: white;
+            margin: 10px;
+        }
+        .main_items{
+            margin: 10px;
+            color: white;
+        }
+        article{
+            text-align: center;
+        }
+        article > h1{
+            color: black;
+            font-size: 85px;
+            text-align: center;
+        }
+        .article_icon{
+            position: relative;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+        .article_icon > input{
+            border-radius: 35px;
+            width: 550px;
+            height: 45px;
+            padding-left: 55px;
+        }
+        .i_first{
+            position: relative;
+            left: 40px;
+            top: 1px;
+            font-size: 14px;
+            color: #888889;
+        }
+        .i_second{
+            color:blueviolet;
+        }
+        div > button{
+            position: relative;
+            right: 40px;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        .footer_area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+
+        }
+        .footer_item_add{
+            display: flex;
+        }
+        .footer_item{
+            height: 100px;
+            width: 100px;
+        }
+        .footer_item > button{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            background: none;
+            width: 100px;
+            height: 100px;
+        }
+        .footer_img{
+            width: 40px;
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="main_items mainitem1"><button>Gmail</button></div>
+            <div class="main_items mainitem1"><button>이미지</button></div>
+            <div class="main_items"><button><img src="image/menu.png" class="img_item_header"></button></div>
+            <div class="main_items main_item2"><button>민섭</button></div>
+        </div>
+    </header>
+        <article>
+            <h1><img src="image/google.png"></h1>
+            <div class="article_icon">
+                <i class="i_first"></i>
+                <input type="search" placeholder="Google 검색 또는 URL검색">
+                <button><i class="i_second"></i></button>
+            </div>
+        </article>
+        <footer>
+            <div class="footer_area">
+                <div class="footer_item_add">
+                    <div class="footer_item"><button><img src="image/naver.png" class="footer_img"><div class="footer_item_name">Naver</div></button></div>
+                    <div class="footer_item"><button><img src="image/netflex.png" class="footer_img"><div class="footer_item_name">Netflex</div></button></div>
+                    <div class="footer_item"><button><img src="image/youtube.png" class="footer_img"><div class="footer_item_name">Youtube</div></button></div>
+                    <div class="footer_item"><button><img src="image/coupang.png" class="footer_img"><div class="footer_item_name">Coupang</div></button></div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>

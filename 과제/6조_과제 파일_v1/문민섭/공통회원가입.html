@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통회원가입</title>
+    <style>
+        body{
+            background-color: #f1f1f1;
+        }
+        .form{
+            width: 602px;
+            margin: 0 auto;
+        }
+        div{
+            display: block;
+        }
+        fieldset, p, ul, ol, h2{
+            padding: 0;
+            margin: 0;
+        }
+        .step{
+            float: right;
+            height: 25px;
+            padding-top: 20px;
+            display: block;
+            padding-top: 20px;
+            list-style: none;
+            
+            font-weight: bold;
+        }
+        .step > li{
+            float: left;
+            margin-left: 24px;
+        }
+        h2{
+            float: left;
+            width: 230px;
+            height: 45px;
+            font-size:38px;
+
+        }
+        .header{
+            clear: both;
+            height: 45px;
+            margin-bottom: 28px;
+        }
+        fieldset > p{
+            font-size: small;
+        }
+
+        .form_list{
+            margin-bottom: 20px;
+            padding: 0;
+            border: 1px solid #888888;
+            font-size: 12px;
+            background-color: #fff;
+        }
+        .form_list > li{
+            list-style: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            min-height: 49px;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        .guide_txt{
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 490px;
+            height: 36px;
+            padding: 0 30px;
+            background: #fff;
+            line-height: 50px;
+            z-index: 1;
+            margin-top: -6px;
+        }
+        .form_list > li label{
+            display: inline;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: text;
+            position: relative;
+            color:#c4c4c4;
+            
+        }
+        .placeholder{
+            display: inline;
+            padding-left: 15px;
+            font-size: 12;
+            color: #aeaeae;
+        }
+        
+        .form_list > li input{
+            width: 490px;
+            height: 16px;
+            margin: 11px 0px 2px 28px;
+            padding: 5px 0;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            
+        }
+        .all_content{
+            position: relative;
+            margin-bottom: 16px;
+            padding-top: 65px;
+            padding-bottom: 200px;
+        }
+        .check_msg{
+            color: red;
+            margin: 0px 0px 20px 30px;
+        }
+        #select_phone_num{
+            left: 0px;
+            width: 119px;
+            border-left: none;
+            border-right: 1px solid #d3d3d3;
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            height: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            border-top: none;
+            border-bottom: none;
+        }
+        #phone_num2{
+            width: 40px;
+            margin-left: 145px;
+            padding: 5px 15px;
+        }
+        .md_txt{
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            line-height: 26px;
+            zoom: 1;
+            top: 6px;
+        }
+        #phone_num3{
+            width: 257px;
+            margin-left: 0;
+            padding: 5px 15px;
+        }
+        .select_first > .guide_txt{
+            left: 30px;
+            width: 262px;
+            margin-left: 90px;
+            z-index: 1;
+        }
+        #phone_Msg{
+            margin-left: 150px;
+        }
+        #email1{
+            width: 210px;
+        }
+        #email2{
+            width: 130px;
+            margin-left: 0;
+        }
+        #select_email{
+            width: 310px;
+        }
+        #select_email_server{
+            position: absolute;
+            left: auto;
+            right: -1px;
+            width: 188px;
+            border-left: 1px solid #d3d3d3;
+            border-right: 1px solid #999;
+            border-top: none;
+            border-bottom: none;
+            top: 0;
+            z-index: 3;
+            /* width: 598px; */
+            float: right;
+            height: 100%;
+            text-align: left;
+            padding: 0;
+            background-color: transparent;
+
+        }
+        .btn-area{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .btn-home{
+            width: 125px;
+            height: 57px;
+            background-color: #888888;
+            border: none;
+            border-radius: 3%;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .btn-next{
+            width: 195px;
+            height: 57px;
+            background-color: #3880e8;
+            border: none;
+            border-radius: 3%;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .img_check{
+            display: block;
+            position: absolute;
+            top: 50% !important;
+            right: 25px !important;
+            width: 25px !important;
+            
+        }
+        img{
+            left: auto;
+            height: 15px;
+            margin-top: -8px;
+            border: none;
+        }
+        .gender_class{
+            margin-left: 10px !important;
+        }
+        .gender_input{
+            width: auto !important; 
+            margin: 0 !important;
+            margin-top: 8px !important;
+        }
+        #gender_id{
+            min-height: 30px !important;
+        }
+
+
+    </style>
+    <script src="js/jquery-3.6.2.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="all_content">
+        <div class="form">
+            <div class="header">
+                <h2>구매회원가입</h2>
+            <ol class="step">
+                <li>1가입</li>
+                <li>2약관동의</li>
+                <li style="color: #3880e8;">3정보입력</li>
+                <li>4가입완료</li>
+            </ol>
+        </div>
+            <form id="form1">
+                <fieldset style="border: none;">
+                    <p>회원정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</p>
+                    <ul class="form_list" style="position: static;">
+                        <li style="z-index: 0;">
+                            <div class="guide_txt" id="input_Id">
+                                <label for="login_Id">ID를 만들어주세요</label>
+                                <p class="placeholder">띄어쓰기 없이 영/숫자 6-10자</p>
+                            </div>
+                            <input type="text" id="login_Id">
+                            <p id="idMsg" class="check_msg" style="display: block;"></p>
+                            <span class="img_check"><img src="image/아이디체크.png" id="idimgCheck"></span>
+                        </li>
+                        <li style="z-index: 0;">
+                            <div class="guide_txt" id="input_Pw">
+                                <label for="input_Pw">비밀번호 입력</label>
+                                <p class="placeholder">8-15자의 영문 대소문자, 숫자 또는 특수문자 조합</p>
+                            </div>
+                            <input type="password" id="login_Pw">
+                            <p id="pwMsg" class="check_msg" style="display: block;"></p>
+                            <span class="img_check"><img src="image/비밀번호.png" id="pwimgCheck"></span>
+                        </li>
+                        <li style="z-index: 0;">
+                            <div class="guide_txt" id="input_PwConfirm">
+                                <label for="input_PwConfirm">위의 비밀번호를 다시 입력해주세요.</label>
+                            </div>
+                            <input type="password" id="login_PwConfirm">
+                            <p id="pwMsgConfirm" class="check_msg" style="display: block;"></p>
+                            <span class="img_check"><img src="image/비밀번호.png" id="pwConfirmimgCheck"></span>
+                        </li>
+                        <li style="z-index: 0;">
+                            <div class="guide_txt" id="input_name">
+                                <label for="login_name">이름</label>
+                            </div>
+                            <input type="text" id="login_name">
+                            <p id="nameMsg" class="check_msg" style="display: block;"></p>
+                            <span class="img_check"><img src="image/아이디체크.png" id="nameimgCheck"></span>
+                        </li>
+                        <li id="gender_id">
+                            <label class="gender_class"> 남 <input type="radio" name="gender" value="m" class="gender_input"></label>
+                            <label class="gender_class"> 여 <input type="radio" name="gender" value="f" class="gender_input"></label>
+                        </li>
+                        <li style="z-index: 2;" class="select_first">
+                            <div class="guide_txt" id="phone_input_first">
+                                <label for="phone_num2">휴대폰번호입력</label>
+                            </div>
+                            <select name="phone_num" id="select_phone_num">
+                                <option value="010" selected>010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                              </select>
+                            <input type="text" name="phone_num2" id="phone_num2">
+                            <span class="md_txt">-</span>
+                            <input type="text" name="phone_num3" id="phone_num3">
+                            <p id="phone_Msg" class="check_msg" style="display: block;"></p>
+                            <span class="img_check"><img src="image/아이디체크.png" id="phoneMsgCheck"></span>
+                        </li>
+                        <li style="z-index: 0;" >
+                            <div class="guide_txt" id="select_email">
+                                <label for="email1">이메일</label>
+                            </div>
+                            <input type="text" name="email1" id="email1">
+                            <span class="md_txt">@</span>
+                            <input type="text" name="email2" id="email2">
+                            <select name="email" id="select_email_server">
+                                <option value="" selected>직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                <option value="paran.com">paran.com</option>
+                                <option value="empas.com">empas.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                              </select>
+                            <p id="email_Msg" class="check_msg" style="display: block;"></p>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <button class="btn-home">처음으로</button>
+                        <button class="btn-next" id="Check">확인</button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+    <script src="js/공통회원가입.js"></script>
+</body>
+</html>
