@@ -153,15 +153,15 @@ $('.inputPh').on('input', function () {
     const regEx2 = /^[0-9]{4}$/;
 
     if (regEx1.test(middle.val()) && regEx2.test(end.val())) {
-        $('#phCheckimg').attr('src', '');
-        $('#phCheckimg').attr('src', 'img/파란체크.png');
+        $('#phChecking').attr('src', '');
+        $('#phChecking').attr('src', 'img/파란체크.png');
         $('#divisionLine').css('color', 'black');
         phMessage.text('');
     } else {
         phMessage.text('');
         phMessage.css('color', '#dc3340');
         phMessage.text('전화번호를 정확히 dd입력 해 주세요');
-        $('#phCheckimg').attr('src', 'img/검정체크.png');
+        $('#phChecking').attr('src', 'img/검정체크.png');
     }
 });
 
@@ -234,6 +234,16 @@ $('#inputAdress').blur(function () {
 });
 //*가입버튼------------------------------------------------
 
-// function validate() {
-//     if()
-// }
+function validate() {
+    const gender = $('.gender');
+    if (!gender[0].checked && !gender[1].checked) {
+        alert('성별을 선택해주세요');
+        return false;
+    }
+    console.log(validate());
+
+    // let src = $('#phChecking').attr('src');
+    // if (src == 'img/검정체크.png') {
+    //     return false;
+    // }
+}
